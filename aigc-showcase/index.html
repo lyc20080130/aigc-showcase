@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIGC 社 · 作品展示</title>
+  <meta name="description" content="AIGC 社团作品展示站 —— 汇集我们的 AIGC 创作与黑客松参赛作品。">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-name">AIGC<span class="brand-thin">社</span></span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#works">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="hero-kicker">AIGC CLUB · 作品展示</p>
+        <h1 class="hero-title">用 <span class="grad">生成式 AI</span> 造点东西</h1>
+        <p class="hero-sub">这里是 AIGC 社的创作集合 —— 从黑客松的通宵冲刺到日常的实验小样，每一个作品都是一次「AI 与人类」的合奏。</p>
+        <a class="btn" href="#works">浏览作品 ↓</a>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">作品</h2>
+          <p class="section-sub" id="works-count"></p>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="作品筛选"></div>
+        <div class="grid" id="works-grid"></div>
+        <p class="empty" id="empty" hidden>这个分类下还没有作品，去看看别的吧。</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">关于 AIGC 社</h2>
+        <p class="about-text">
+          我们是一群对生成式 AI 好奇的人 —— 画画、写代码、做音乐、剪视频。社团相信最好的学习方式就是「动手造」，
+          于是有了这个网站，用来展示我们做出来的东西，也记录我们一起走过的黑客松与实验。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">AIGC 社</p>
+        <p class="footer-note">把好奇做成作品。</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:hello@aigc.club">hello@aigc.club</a>
+        <a href="https://github.com/aigc-club" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://space.bilibili.com/0" target="_blank" rel="noopener noreferrer">B 站</a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> AIGC Club · 静态站，无后端</p>
+  </footer>
+
+  <script src="./js/works.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
