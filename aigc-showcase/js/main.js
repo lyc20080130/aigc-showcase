@@ -80,6 +80,13 @@
     title.textContent = w.title || "未命名作品";
     body.appendChild(title);
 
+    if (w.author) {
+      const author = document.createElement("p");
+      author.className = "card-author";
+      author.textContent = "作者：" + w.author;
+      body.appendChild(author);
+    }
+
     if (w.tags && w.tags.length) {
       const tags = document.createElement("div");
       tags.className = "card-tags";
