@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIGC 社 · 作品展示</title>
+  <meta name="description" content="AIGC 社团作品展示站 —— 汇集我们的 AIGC 创作与黑客松参赛作品。">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="./images/logo-center.png" alt="AIGC Logo">
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#works">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="hero-kicker">AIGC CLUB · 作品展示</p>
+        <h1 class="hero-title">Rebel Create Generate</h1>
+        <p class="hero-sub">我们做的包括但不限于 AI，更有设计与思考，科技与人文</p>
+        <a class="btn" href="#works">浏览作品 ↓</a>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">作品</h2>
+          <p class="section-sub" id="works-count"></p>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="作品筛选"></div>
+        <div class="grid" id="works-grid"></div>
+        <p class="empty" id="empty" hidden>这个分类下还没有作品，去看看别的吧。</p>
+      </div>
+    </section>
+    <section class="team" id="team">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">核心社员</h2>
+          <p class="section-sub">社团核心成员</p>
+        </div>
+        <div class="team-list">
+          <div class="member">
+            <img class="member-avatar" src="./images/wangyue.jpg" alt="王越 头像" style="width:96px; height:96px; border-radius:50%; object-fit:cover;">
+            <p class="member-name" style="width:96px; text-align:center; white-space:nowrap; font-size:0.88rem;">王越</p>
+            <span class="member-badge">副社长</span>
+          </div>
+          <div class="member">
+            <img class="member-avatar" src="./images/zhangchenfeng.png" alt="张陈峰 头像" style="width:96px; height:96px; border-radius:50%; object-fit:cover;">
+            <p class="member-name" style="width:96px; text-align:center; white-space:nowrap; font-size:0.88rem;">张陈峰</p>
+            <span class="member-badge">社长</span>
+          </div>
+          <div class="member">
+            <img class="member-avatar" src="./images/dengweifeng.jpg" alt="邓炜峰 头像" style="width:96px; height:96px; border-radius:50%; object-fit:cover;">
+            <p class="member-name" style="width:96px; text-align:center; white-space:nowrap; font-size:0.88rem;">邓炜峰</p>
+            <span class="member-badge">前社长</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">关于 AIGC 社</h2>
+        <p class="about-text">
+          一群对生成式 AI 好奇的人。在这里，欢迎所有「离经叛道」的朋友加入，动手造物，记录思考
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">AIGC 社</p>
+        <p class="footer-note">把好奇做成作品。</p>
+      </div>
+      <div class="footer-links">
+        <a class="footer-link" href="mailto:hello@aigc.club">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2.5"></rect><path d="m3 7 8.3 5.1a2 2 0 0 0 1.4 0L21 7"></path></svg>
+          <span>hello@aigc.club</span>
+        </a>
+        <a class="footer-link" href="https://github.com/aigc-club" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"></path></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="footer-link" href="https://space.bilibili.com/0" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2.5"></rect><path d="m17 2-5 5-5-5"></path></svg>
+          <span>B 站</span>
+        </a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> AIGC Club · 静态站，无后端</p>
+  </footer>
+
+  <script src="./js/works.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
