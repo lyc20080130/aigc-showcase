@@ -39,7 +39,7 @@ body::before {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20vw;
+  font-size: 15vw;
   font-weight: 900;
   letter-spacing: 0.05em;
   white-space: nowrap;
@@ -252,14 +252,14 @@ a.card {
   border: 1px solid var(--card-border);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  transform: perspective(1000px) rotateY(-5deg);
+  transform: none;
   transition: all 0.3s ease;
   will-change: transform;
 }
 
-/* 悬停回正 + 上浮 + 阴影加深 */
+/* 悬停上浮 + 阴影加深 */
 .card:hover {
-  transform: perspective(1000px) rotateY(0deg) translateY(-4px);
+  transform: translateY(-4px);
   background: var(--card-hover);
   border-color: #D4D4D4;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
@@ -527,7 +527,7 @@ a.card {
 
 /* ============ 响应式 ============ */
 @media (max-width: 640px) {
-  body::before { font-size: 32vw; }
+  body::before { font-size: 16vw; }
   .nav-links { gap: 18px; }
   .hero { padding: 64px 0 48px; }
   .grid { grid-template-columns: 1fr; perspective: none; }
